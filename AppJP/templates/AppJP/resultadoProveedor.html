@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+</head>
+<body>
+    
+    <p>Estamos buscando el Proveedor: {{nombre}}</p>
+    
+    {% for proveedor in proveedores %}
+        
+    <p>Nombres:  {{proveedor.nombre_prov}} 
+    <p>Direccion:  {{proveedor.direccion_prov}}</p>
+    <p>Ciudad:  {{proveedor.ciudad}}</p>
+    <p>Rubro:  {{proveedor.rubro}}</p>
+    
+     {% endfor %}
+
+</body>
+</html>

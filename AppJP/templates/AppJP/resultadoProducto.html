@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    
+    <p>Estamos buscando el Producto: {{nombre}}</p>
+    
+    {% for producto in productos %}
+        
+    <p>Nombre:  {{producto.nombre_prod}} 
+    <p>Direccion:  {{producto.direccion_prod}}</p>
+    <p>Marca:  {{producto.marca}}</p>
+    <p>Precio:  {{producto.precio}}</p>
+    
+     {% endfor %}
+
+</body>
+</html>
